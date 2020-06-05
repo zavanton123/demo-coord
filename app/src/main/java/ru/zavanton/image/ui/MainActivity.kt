@@ -1,7 +1,8 @@
-package ru.zavanton.image
+package ru.zavanton.image.ui
 
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
+import ru.zavanton.image.R
 
 class MainActivity : AppCompatActivity() {
 
