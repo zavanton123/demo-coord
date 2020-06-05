@@ -11,17 +11,35 @@
         android:id="@+id/topBar"
         android:layout_width="match_parent"
         android:layout_height="56dp"
-        android:minHeight="56dp"
         android:layout_gravity="top"
         android:background="@color/topBarColor"
         android:elevation="4dp"
         android:gravity="center_vertical"
+        android:minHeight="56dp"
         android:paddingStart="16dp"
         android:paddingEnd="16dp"
         android:text="@string/top_bar"
         android:textColor="@color/white"
         android:textSize="16sp"
         app:layout_behavior=".ui.behavior.TopBarBehavior"
+        />
+
+    <TextView
+        android:id="@+id/middleBar"
+        android:layout_width="300dp"
+        android:layout_height="56dp"
+        android:layout_gravity="center"
+        android:maxWidth="300dp"
+        android:background="@color/middleBarColor"
+        android:elevation="4dp"
+        android:gravity="center"
+        android:minHeight="56dp"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:text="@string/top_bar"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_behavior=".ui.behavior.MiddleBarBehavior"
         />
 
     <androidx.core.widget.NestedScrollView
