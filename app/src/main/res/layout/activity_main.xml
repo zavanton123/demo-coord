@@ -45,11 +45,7 @@
         android:layout_width="match_parent"
         android:layout_height="56dp"
         android:layout_gravity="bottom"
-        android:background="?attr/colorPrimary"
-        android:elevation="4dp"
-        android:gravity="center"
-        android:text="@string/custom_bottom_bar"
-        android:textColor="@color/white"
+
         app:layout_insetEdge="bottom"
         />
 
