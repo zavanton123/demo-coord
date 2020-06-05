@@ -92,4 +92,5 @@
     </string>
     <string name="action_settings">Settings</string>
     <string name="custom_bottom_bar">Custom Bottom Bar</string>
+    <string name="submenu">SubMenu</string>
 </resources>

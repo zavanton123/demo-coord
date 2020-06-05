@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.coordinatorlayout.widget.CoordinatorLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     >
@@ -12,6 +14,7 @@
         >
 
         <TextView
+            android:id="@+id/infoTextView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="@dimen/text_margin"
@@ -19,6 +22,20 @@
             />
 
     </androidx.core.widget.NestedScrollView>
+
+    <ru.zavanton.image.ui.view.ArticleSubMenu
+        android:id="@+id/articleSubMenu"
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|end"
+        android:background="@color/articleSubMenuColor"
+        android:gravity="center"
+        android:text="@string/submenu"
+        android:layout_margin="@dimen/articleSubMenuMargin"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_dodgeInsetEdges="bottom"
+        />
 
     <ru.zavanton.image.ui.view.CustomBottomBar
         android:id="@+id/customBottomBar"
@@ -28,7 +45,10 @@
         android:background="?attr/colorPrimary"
         android:gravity="center"
         android:text="@string/custom_bottom_bar"
-        android:textColor="@android:color/white"
+        android:textColor="@color/white"
+        android:visibility="visible"
+        app:layout_insetEdge="bottom"
+        tools:visibility="visible"
         />
 
 
