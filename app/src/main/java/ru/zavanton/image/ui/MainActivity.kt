@@ -18,6 +18,17 @@ class MainActivity : AppCompatActivity() {
             toggleCustomBottomBar()
         }
 
+        customBottomBar.setOnClickListener {
+            toggleArticleSubMenu()
+        }
+    }
+
+    private fun toggleArticleSubMenu() {
+        if (articleSubMenu.isVisible) {
+            articleSubMenu.gone()
+        } else {
+            articleSubMenu.visible()
+        }
     }
 
     private fun toggleCustomBottomBar() {

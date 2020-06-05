@@ -26,29 +26,31 @@
     <ru.zavanton.image.ui.view.ArticleSubMenu
         android:id="@+id/articleSubMenu"
         android:layout_width="200dp"
-        android:layout_height="100dp"
+        android:layout_height="96dp"
         android:layout_gravity="bottom|end"
+        android:layout_margin="@dimen/articleSubMenuMargin"
         android:background="@color/articleSubMenuColor"
+        android:elevation="8dp"
         android:gravity="center"
         android:text="@string/submenu"
-        android:layout_margin="@dimen/articleSubMenuMargin"
         android:textColor="@color/white"
         android:textSize="14sp"
+        android:visibility="gone"
         app:layout_dodgeInsetEdges="bottom"
+        tools:visibility="visible"
         />
 
     <ru.zavanton.image.ui.view.CustomBottomBar
         android:id="@+id/customBottomBar"
         android:layout_width="match_parent"
-        android:layout_height="50dp"
+        android:layout_height="56dp"
         android:layout_gravity="bottom"
         android:background="?attr/colorPrimary"
+        android:elevation="4dp"
         android:gravity="center"
         android:text="@string/custom_bottom_bar"
         android:textColor="@color/white"
-        android:visibility="visible"
         app:layout_insetEdge="bottom"
-        tools:visibility="visible"
         />
 
 
