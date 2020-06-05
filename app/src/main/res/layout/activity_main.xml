@@ -19,17 +19,17 @@
         <com.google.android.material.appbar.CollapsingToolbarLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:contentScrim="?attr/colorPrimary"
+            app:contentScrim="@color/yellow"
             app:expandedTitleGravity="bottom"
-            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed|snap"
             >
 
             <ImageView
                 android:id="@+id/ivProduct"
                 android:layout_width="match_parent"
+                android:layout_height="200dp"
                 android:scaleType="center"
                 android:src="@drawable/cat"
-                android:layout_height="200dp"
                 />
 
             <com.google.android.material.appbar.MaterialToolbar

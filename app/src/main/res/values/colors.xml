@@ -8,4 +8,8 @@
     <color name="bottom_bar_color">#F8784F</color>
     <color name="topBarColor">#4CAF50</color>
     <color name="middleBarColor">#E91E63</color>
+    <color name="colorSurface">#FFE28A</color>
+    <color name="yellow">#FFEB3B</color>
+    <color name="green">#009688</color>
+
 </resources>
