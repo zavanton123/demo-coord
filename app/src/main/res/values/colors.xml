@@ -6,4 +6,5 @@
     <color name="articleSubMenuColor">#d65555</color>
     <color name="white">#FFFFFF</color>
     <color name="bottom_bar_color">#F8784F</color>
+    <color name="topBarColor">#4CAF50</color>
 </resources>
