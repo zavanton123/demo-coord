@@ -40,10 +40,11 @@
         tools:visibility="visible"
         />
 
-    <ru.zavanton.image.ui.view.CustomBottomBar
+    <ru.zavanton.image.ui.view.BottomBar
         android:id="@+id/customBottomBar"
         android:layout_width="match_parent"
         android:layout_height="@dimen/custom_bottom_bar_height"
+        android:minHeight="@dimen/custom_bottom_bar_height"
         android:layout_gravity="bottom"
         android:elevation="4dp"
         app:layout_insetEdge="bottom"
