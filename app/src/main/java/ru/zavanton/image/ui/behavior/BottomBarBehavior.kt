@@ -26,14 +26,17 @@ class BottomBarBehavior : CoordinatorLayout.Behavior<BottomBar> {
 
     override fun onNestedPreScroll(
         coordinatorLayout: CoordinatorLayout,
-        target: BottomBar,
+        child: BottomBar,
         view: View,
         dx: Int,
         dy: Int,
         consumed: IntArray,
         type: Int
     ) {
-        target.translationY = MathUtils.clamp(target.translationY + dy, 0f, target.minHeight.toFloat())
-        super.onNestedPreScroll(coordinatorLayout, target, view, dx, dy, consumed, type)
+        val offset = MathUtils.clamp(child.translationY + dy, 0f, child.minHeight.toFloat())
+        if (offset != child.translationY) {
+            child.translationY = offset
+        }
+        super.onNestedPreScroll(coordinatorLayout, child, view, dx, dy, consumed, type)
     }
 }
